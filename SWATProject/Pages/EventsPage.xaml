@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SWATProject.Pages.EventsPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+
+        <ScrollView>
+
+
+            <Grid>
+
+
+                <ListView ItemsSource="{Binding Activity}"  SelectedItem="{Binding SelectedEvent}"  SeparatorVisibility="None" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame Padding="5" Margin="10" HasShadow="True">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="80"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="80"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.33*"/>
+                                            <RowDefinition Height="0.33*"/>
+                                            <RowDefinition Height="0.33*"/>
+                                        </Grid.RowDefinitions>
+                                        <Image Source="{Binding Image}" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Image>
+                                        <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="1"/>
+                                        <Label Text="{Binding date}" Grid.Row="1" Grid.Column="1"/>
+                                        <Label Text="{Binding Duration}" Grid.Row="2" Grid.Column="1"/>
+                                    </Grid>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <ActivityIndicator x:Name="Indicator" HorizontalOptions="Center" VerticalOptions="Center" Color="#340E22" IsRunning="False"></ActivityIndicator>
+
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

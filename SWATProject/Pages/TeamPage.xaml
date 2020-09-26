@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SWATProject.Pages.TeamPage"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <ListView ItemsSource="{Binding Leaders}"  SelectedItem="{Binding SelectedSWATLeader,Mode=TwoWay}"    SeparatorVisibility="None" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame Padding="5" Margin="10" HasShadow="True">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="80"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="80"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.33*"/>
+                                            <RowDefinition Height="0.33*"/>
+                                            <RowDefinition Height="0.33*"/>
+                                        </Grid.RowDefinitions>
+                                        <Image Source="{Binding Image}" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Image>
+                                        <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="1"/>
+                                        <Label Text="{Binding Education}" Grid.Row="1" Grid.Column="1"/>
+                                        <Label Text="{Binding Position}"  Grid.Row="2" Grid.Column="1"/>
+
+                                    </Grid>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

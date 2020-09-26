@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SWATProject.Pages.SelectedEventPage"
+              NavigationPage.HasBackButton="True">
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="1">
+                <Label Text="{Binding Name}" Margin="40,0,40,0" VerticalOptions="CenterAndExpand" ></Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2">
+                <Label Text=""></Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3">
+                <Label Text="{Binding Duration}" Margin="40,0,40,0" VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="4">
+                <Label Text=""></Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="5">
+                <Label Text="{Binding Description}" Margin="40,0,40,0" VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="9" Margin="40,0,40,0" VerticalOptions="CenterAndExpand">
+                <Button Text="Book" Command="{Binding MoreDetails }" CornerRadius="30" BackgroundColor="Green" HeightRequest="40" TextColor="White"></Button>
+            </StackLayout>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

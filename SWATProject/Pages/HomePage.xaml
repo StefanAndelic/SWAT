@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SWATProject.Pages.HomePage"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="True">
+
+
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <StackLayout>
+
+                    <Label Text=""></Label>
+
+                    <Image Margin="0,50,0,10" Source="SWAT.jpg" >
+
+
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer  Command="{Binding PlayVideo}" />
+                        </Image.GestureRecognizers>
+
+
+                    </Image>
+
+                    <Label Text=""></Label>
+                </StackLayout>
+
+                <StackLayout >
+
+                    <Label Text="The Student Wellbeing Awareness Team (SWAT) empowers students about their own health by raising awareness and providing education about health and wellbeing.The Student Wellbeing Awareness Team (SWAT) are current students who lead health promotion action on campus, creating space and conversations around mental health and wellbeing for students and the wider community."
+
+                   
+                    FontSize="Medium" Margin="50,0,50,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                    </Label>
+
+                </StackLayout>
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

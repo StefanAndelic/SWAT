@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SWATProject.Pages.OlderSelectedEventPage"
+             NavigationPage.HasBackButton="True">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="1">
+                <Label Text="{Binding Name}" Margin="40,0,40,10" VerticalOptions="CenterAndExpand" ></Label>
+            </StackLayout>
+
+
+            <StackLayout Grid.Row="2">
+                <Label Text="{Binding Duration}" Margin="40,0,40,10" VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3">
+                <Label Text="{Binding Description}" Margin="40,0,40,10" VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="4" Margin="40,0,40,10" VerticalOptions="CenterAndExpand">
+
+
+            </StackLayout>
+
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SWATProject.Pages.ResourcesPage"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout>
+                    <Image Source = "Bubble.jpg" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding BubblePage}" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image Source = "Workshops.jpg"  >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Workshops}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image Source = "Pressure.jpg" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Pressure}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image Source = "Money.jpg" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Money}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image Source = "Life.jpg" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer  Command="{Binding StudentLife}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image Source = "Mind.jpg" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Mind}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image Source = "Identity.jpg" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Identity}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

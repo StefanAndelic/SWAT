@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SWATProject.Pages.MoreDetailsPage"
+             NavigationPage.HasBackButton="True">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+
+            <StackLayout Grid.Row="2" >
+
+                <Entry Placeholder="Enter name" Text = "{Binding Name}"></Entry>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="3">
+                <Picker Title="Select time">
+                    <Picker.Items>
+                        <x:String>10am</x:String>
+                        <x:String>11am</x:String>
+                        <x:String>12pm</x:String>
+                        <x:String>13pm</x:String>
+
+
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <StackLayout Grid.Row="4">
+                <Editor Placeholder="Enter additional notes(e.g. I will be late for 15 minutes)" Text="{Binding EditorText}">
+
+                </Editor>
+            </StackLayout>
+
+            <StackLayout Grid.Row="8" Margin="40,0,40,0" VerticalOptions="CenterAndExpand">
+
+                <Button Text="Submit" Command="{Binding Apply}" BackgroundColor="Green" TextColor="White" CornerRadius="30" ></Button>
+
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
