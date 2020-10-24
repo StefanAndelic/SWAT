@@ -5,4 +5,4 @@ This repository contains Xamarin Forms source code for a frontend part of a mobi
 
 To execute the source code, import the provided files into a C# IDE (e.g. Visual Studio) and run it on an emulator or personal device. 
 
-[![swat-1.png](https://i.postimg.cc/DzjYskNj/swat-1.png)](https://postimg.cc/06SfR3PD),[![swat-2.png](https://i.postimg.cc/k5Bv0Vjs/swat-2.png)](https://postimg.cc/kVPS85PR),[![swat-7.png](https://i.postimg.cc/1Xnx455r/swat-7.png)](https://postimg.cc/zHr2cNhy),[![swat-5.png](https://i.postimg.cc/cL7pvzZ2/swat-5.png)](https://postimg.cc/NKMJVpKk)
+[![1.png](https://i.postimg.cc/4yqndNY5/1.png)](https://postimg.cc/jn6R3TQw),[![2.png](https://i.postimg.cc/g0VMHxdx/2.png)](https://postimg.cc/06Nd82zv),[![3.png](https://i.postimg.cc/hjMpNNXg/3.png)](https://postimg.cc/vggrVq7S),[![4.png](https://i.postimg.cc/nrz0xTmm/4.png)](https://postimg.cc/qhP8XsjB)
